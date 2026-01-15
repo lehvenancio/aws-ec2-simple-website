@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="dark">
 
 <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+<button class="lang-toggle" onclick="toggleLanguage()">PT | EN</button>
 
 <div class="container">
 
@@ -16,79 +18,60 @@
         <img src="profile.jpeg" alt="Foto de Leandro Venancio" class="profile-pic">
 
         <h1>Leandro Luiz Venancio</h1>
-        <p class="subtitle">Cloud Computing • AWS • Estágio / Júnior</p>
+        <p class="subtitle" data-i18n="subtitle">
+            Cloud Computing • AWS • Estágio / Júnior
+        </p>
 
         <div class="links">
             <a href="https://www.linkedin.com/in/leandro-venancio-57b21491/" target="_blank">
-                <svg viewBox="0 0 24 24" class="icon">
-                    <path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 8h3v13H3zm7 0h3v2h.04c.42-.8 1.44-1.64 2.96-1.64 3.17 0 3.75 2.09 3.75 4.8V21h-3v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.5V21h-3z"/>
-                </svg>
                 LinkedIn
             </a>
-
             <a href="https://github.com/lehvenancio" target="_blank">
-                <svg viewBox="0 0 24 24" class="icon">
-                    <path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 10 8.2 11.6.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.8 1.8 2.7 2.3.2-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.7 5.6-5.3 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A12 12 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/>
-                </svg>
                 GitHub
             </a>
         </div>
     </header>
 
     <section>
-        <h2>Sobre Mim</h2>
-        <p>
+        <h2 data-i18n="about_title">Sobre Mim</h2>
+        <p data-i18n="about_text">
             Estudante de Engenharia de Software com foco em Cloud Computing e AWS.
-            Atuo profissionalmente com suporte técnico, o que fortaleceu minhas habilidades
-            em resolução de problemas, sistemas e comunicação técnica.
-            Busco oportunidade como Cloud Engineer Júnior ou Estagiário.
+            Atuo profissionalmente com suporte técnico e busco oportunidade como Cloud Engineer Júnior.
         </p>
     </section>
 
     <section>
-        <h2>Experiência Profissional</h2>
+        <h2 data-i18n="exp_title">Experiência Profissional</h2>
         <ul>
-            <li><strong>Customer Support Agent — Influx (2021–Atual)</strong><br>
-                Suporte técnico, troubleshooting, CRM, atendimento internacional.</li>
-            <li><strong>Best Idiomas</strong><br>
-                Suporte administrativo, tutor de inglês e apoio técnico.</li>
+            <li data-i18n="exp_1"></li>
+            <li data-i18n="exp_2"></li>
         </ul>
     </section>
 
     <section>
-        <h2>Experiência Internacional</h2>
+        <h2 data-i18n="edu_title">Formação</h2>
         <ul>
-            <li><strong>Au Pair — Seattle, EUA</strong><br>
-                Gestão de rotinas, organização, resolução de problemas e adaptação cultural.</li>
-            <li><strong>AIESEC</strong><br>
-                Desenvolvimento de liderança e trabalho em equipe.</li>
+            <li data-i18n="edu_1"></li>
+            <li data-i18n="edu_2"></li>
         </ul>
     </section>
 
     <section>
-        <h2>Formação</h2>
+        <h2 data-i18n="skills_title">Habilidades Técnicas</h2>
         <ul>
-            <li>Engenharia de Software — UNOPAR (em andamento)</li>
-            <li>Python Programming — Seattle North College (EUA)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-            <li>AWS: EC2, S3, IAM, CloudFront</li>
+            <li>AWS (EC2, S3, IAM, CloudFront)</li>
             <li>Linux, Nginx</li>
-            <li>Python (intermediário)</li>
+            <li>Python</li>
             <li>HTML, CSS</li>
-            <li>SQL / NoSQL (básico)</li>
+            <li>SQL / NoSQL</li>
         </ul>
     </section>
 
     <section>
-        <h2>Idiomas</h2>
+        <h2 data-i18n="lang_title">Idiomas</h2>
         <ul>
-            <li>Português — Nativo</li>
-            <li>Inglês — B2</li>
+            <li data-i18n="lang_pt"></li>
+            <li data-i18n="lang_en"></li>
         </ul>
     </section>
 
